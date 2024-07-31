@@ -11,6 +11,8 @@ int main(){
     ImprimeTopo(&pilha);
     Emplilhar(&pilha, 10);
     ImprimeTopo(&pilha);
+    Desempilha(&pilha);
+    ImprimeTopo(&pilha);
 
     return 0;
 }

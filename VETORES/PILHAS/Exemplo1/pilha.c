@@ -16,7 +16,7 @@ bool VerificaPilhaVazia(Pilha *P){
     }
 }
 
-void Emplilhar(Pilha *P, int elemento){
+void Emplilhar(Pilha *P, int elemento){ //função PUSH
     P->capacidade[++(P->topo)] = elemento; //o elemento inserido de torna o topo da pilha
     printf("Elemento inserido.\n");
     (P->tamanho) ++; //atualiza a quantidade de elementos na pilha
@@ -25,4 +25,10 @@ void Emplilhar(Pilha *P, int elemento){
 void ImprimeTopo(Pilha *P){
     printf("Elemento no topo: %d\n", P->capacidade[P->topo]);
     printf("Tamanho atual da pilha: %d\n", P->tamanho);
+}
+
+void Desempilha(Pilha *P){
+    P->capacidade[(P->topo)--];
+    printf("Elemento retirado.\n");
+    (P->tamanho)--;
 }
