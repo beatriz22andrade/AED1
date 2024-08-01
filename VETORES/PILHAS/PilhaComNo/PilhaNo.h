@@ -6,14 +6,12 @@
 #define MAX 10
 
 //define o nó
-typedef struct _no
-{
+typedef struct _no{
     int elemento;
 }No;
 
 //define a pilha
-typedef struct _pilha
-{
+typedef struct _pilha{
     No capacidade[MAX];
     int topo;
 }Pilha;

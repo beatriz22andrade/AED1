@@ -6,8 +6,7 @@
 
 #define MAX 10
 
-typedef struct _pilha
-{
+typedef struct _pilha{
     int topo;
     int capacidade[MAX];
     int tamanho;
